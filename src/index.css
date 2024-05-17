@@ -134,6 +134,10 @@ input.invalid {
   background-color: #f0b322;
   border-radius: 6px;
   border: none;
+
+  &:disabled{
+    cursor: not-allowed;
+  }
 }
 
 .button:hover {
