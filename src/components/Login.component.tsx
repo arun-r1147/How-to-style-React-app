@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import { styled } from "styled-components";
 import { CustomInput } from "./CustomInputcomponent";
+import { Button } from "./Button.component";
 
 const LoginContainer = styled.section`
   width: 100%;
@@ -41,7 +42,7 @@ export const Login: FC = () => {
 
   const handleSubmission = () => {
     setSubmit(true);
-    console.log(email, password);
+    console.log("form",email, password);
   };
 
   const isEmailValid = submit && !email.includes("@");
@@ -79,13 +80,12 @@ export const Login: FC = () => {
 
       <ButtonContainer>
         <button className="text-button">Create a new account?</button>
-        <button
-          disabled={isEmailValid || isPaswordValid}
-          className="button"
-          onClick={handleSubmission}
+        <Button
+          isDisabled={isPaswordValid || isEmailValid}
+          onClickSubmission={handleSubmission}
         >
           SignIn
-        </button>
+        </Button>
       </ButtonContainer>
     </LoginContainer>
   );
