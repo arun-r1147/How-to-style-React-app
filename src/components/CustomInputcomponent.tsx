@@ -17,7 +17,7 @@ export const CustomInput: FC<CustomInputProps> = ({
   ...inputProps
 }) => {
   let labelClass =
-    "block mb-2 text-xs font-bold tracking-wide uppercase outline-none";
+    "block mb-2 text-xs font-bold tracking-wide uppercase outline-none text-start";
 
   let inputClass =
     "w-full px-3 py-2 leading-tight border rounded shadow bg-stone-200 outline-none text-gray-800";
