@@ -11,7 +11,7 @@ export const Button: FC<ButtonProps> = ({
   isDisabled,
 }) => {
   let buttonClass =
-    "bg-yellow-600 cursor-pointer backdrop-blur-0 leading-tight px-8 py-4 font-semibold uppercase rounded text-stone-800 focus:outline-none hover:bg-yellow-500 ";
+    "bg-amber-400 cursor-pointer backdrop-blur-0 leading-tight px-8 py-4 font-semibold uppercase rounded text-stone-800 focus:outline-none hover:bg-amber-500 ";
   if (isDisabled) {
     buttonClass += " cursor-not-allowed";
   } else {
